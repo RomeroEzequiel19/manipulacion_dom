@@ -1,6 +1,9 @@
 //Realizo la funcion document.getElementById que devuelve una referencia al elemento por su ID y le asigno a una variable
 let boton = document.getElementById("btn");
 
+//Para que el resultado aparezco en 0 por defecto
+document.getElementById('resultado').innerHTML = 0;
+
 // Al hacer click en el boton, se ejecutan las siguientes instrucciones
 boton.addEventListener("click", () => {
     //Realizo la funcion document.getElementById que devuelve una referencia al elemento por su ID y le asigno a una variable
