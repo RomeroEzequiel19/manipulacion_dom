@@ -4,9 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Calculadora</title>
   </head>
   <body>
-    <h1>Ejercicio 3</h1>
+    <main class="container-main">
+      <!-- Titulo -->
+      <h1>Ejercicio 3</h1>
+
+      <!-- Creacion del formulario -->
+      <form id="miFormulario">
+        <h3>Operaciones Básicas</h3>
+        <div>
+          <!-- Ingregar primero numero -->
+          <div>
+            <input type="number" name="numero1" id="numero1" placeholder="0" />
+          </div>
+          <!-- Elegir operacion -->
+          <div>
+            <select name="operacion" id="operacion">
+              <option value="1">SUMA</option>
+              <option value="2">RESTA</option>
+              <option value="3">MULTIPLICACIÓN</option>
+              <option value="4">DIVISIÓN</option>
+            </select>
+          </div>
+          <!-- Colocar segundo numero -->
+          <div>
+            <input type="number" name="numero2" id="numero2" placeholder="0" />
+          </div>
+          <!-- Boton para calcular -->
+          <div>
+            <button type="button" id="btn">Calcular</button>
+          </div>
+        </div>
+      </form>
+      <!-- Lugar donde se muestra el resultado -->
+      <div>
+        <h3>Resultado</h3>
+        <p id="valor"><span id="resultado"></span></p>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
   </body>
 </html>
